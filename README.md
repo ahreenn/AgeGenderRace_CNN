@@ -1,6 +1,6 @@
 # AgeGenderRace_CNN
 
-This is a multi-classification project that aims to classify a person's age, gender and race based on their photo using CNN. Some difficulties were encountered when creating the final "Predict Model.py" to merge all three models together in the coding aspect. After injecting external images into the model, the final results were more promising on age and gender - however, the model seems to predict race quite inaccurately - perhaps due to the photos being transformed into greyscale.
+This is a multi-classification project that aims to classify a person's age, gender and race based on their photo using CNN. Some difficulties were encountered when creating the final "Predict Model.py" to merge all three models together in the coding aspect. After injecting external images into the model, the final results looked more promising on age and gender - however, the model seems to predict race quite inaccurately - perhaps due to the photos being transformed into greyscale.
 
 
 # Files included:
@@ -23,7 +23,7 @@ It contains 20,000 images of faces of all ethnicities, ages and genders.
 
 
 # Project steps:
-1. I created a separate model for each variable (age, gender, race).
+4. A separate CNN model for each variable (age, gender, race) into different .py files.
   Age was categorized into 1-2, 3-9, 10-20, 21-27, 38-45, 46-65, and 65+.
   Gender was categorized into male and female.
   Race was categorized into White, Black, Asian, Indian, and Others.
