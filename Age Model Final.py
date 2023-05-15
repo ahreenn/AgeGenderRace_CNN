@@ -36,7 +36,7 @@ import itertools
 # In[2]:
 
 
-BASE_DIR = (r/AgeGenderRace_CNN/UTKFace")
+BASE_DIR = (r"/UTKFace")
 
 
 # In[3]:
