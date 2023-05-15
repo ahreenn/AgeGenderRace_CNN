@@ -36,7 +36,7 @@ import itertools
 # In[2]:
 
 
-BASE_DIR = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\Input\UTKFace")
+BASE_DIR = (r/AgeGenderRace_CNN/UTKFace")
 
 
 # In[3]:
@@ -426,10 +426,7 @@ conf_mat
 # Defining a function to plot the confusion matrix in a grid for easier visualization.
 
 def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion Matrix', export_as='confusion_matrix', cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
+
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
         print("Normalized confusion matrix")
