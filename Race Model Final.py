@@ -31,7 +31,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 # In[2]:
 
 
-path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\Input\UTKFace")
+path = (r"/UTKFace")
 pixels = []
 age = []
 gender = [] 
