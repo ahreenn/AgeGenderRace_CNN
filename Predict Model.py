@@ -24,7 +24,7 @@ pylab.rcParams['figure.figsize'] = (10.0, 8.0) # this controls figure size in th
 # In[6]:
 
 
-age_model = load_model(r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\age_output\Output\cnn_logs\age_model_final_save.h5")
+age_model = load_model(r"age_output/Output/cnn_logs/age_model_final_save.h5")
 
 # summarize model.
 age_model.summary()
@@ -33,7 +33,7 @@ age_model.summary()
 # In[7]:
 
 
-gender_model = load_model(r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\gender_output\cnn_logs\gender_model.h5")
+gender_model = load_model(r"gender_output/cnn_logs/gender_model.h5")
 
 # summarize model.
 gender_model.summary()
@@ -42,7 +42,7 @@ gender_model.summary()
 # In[165]:
 
 
-race_model = load_model(r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\race_output\cnn_logs\race_model_final_saveA.h5")
+race_model = load_model(r"race_output/cnn_logs/race_model_final_saveA.h5")
 # summarize model.
 race_model.summary()
 
@@ -63,25 +63,25 @@ race_ranges= ['white','black','asian', 'indian', 'others']
 
 
 # Song Hye Kyo - Female - Asian - 41 years old
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 164811.jpg")
+#img_path = (r"test_input/images/Screenshot 2023-05-13 164811.jpg")
 
 # Daniel Kaluuya - Male - Black - 34 years old
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 171159.jpg")
+#img_path = (r"test_input/images/Screenshot 2023-05-13 171159.jpg")
 
 # Jenna Ortega - Female - White - 20 years old
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 165620.jpg")
+#img_path = (r"test_input/images/Screenshot 2023-05-13 165620.jpg")
 
 # Antonia Gentry - Female - Biracial (White/Black) - 25 years old
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 165731.jpg")
+#img_path = (r"test_input/images/Screenshot 2023-05-13 165731.jpg")
 
 # Priyanka Chopra - Female - Indian - 40 years old
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\priyanka_chopra.jpg")
+#img_path = (r"test_input/images/priyanka_chopra.jpg")
 
 # Pair photo
-img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 170357.jpg")
+img_path = (r"test_input/images/Screenshot 2023-05-13 170357.jpg")
 
 # Group photo
-#img_path = (r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\images\Screenshot 2023-05-13 170049.jpg")
+#img_path = (r"test_input/images/Screenshot 2023-05-13 170049.jpg")
 
 
 # In[179]:
@@ -105,7 +105,7 @@ tf.debugging.disable_traceback_filtering
 
 test_image = cv2.imread(img_path)
 gray = cv2.cvtColor(test_image,cv2.COLOR_BGR2GRAY)
-face_cascade = cv2.CascadeClassifier(r"C:\Users\Airin\Desktop\Xccelerate\Untitled Folder\test_input\cv2_cascade_classifier\haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier(r"test_input/cv2_cascade_classifier/haarcascade_frontalface_default.xml")
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
 i = 0
