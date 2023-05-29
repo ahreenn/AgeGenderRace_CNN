@@ -1,6 +1,6 @@
 # AgeGenderRace_CNN
 
-This is a multi-classification project that aims to classify a person's age, gender and race based on their photo using CNN. Some difficulties were encountered when creating the final "Predict Model.py" to merge all three models together in the coding aspect. After injecting external images into the model, the final results looked more promising on age and gender - however, the model seems to predict race quite inaccurately - perhaps due to the photos being transformed into greyscale.
+This is a multi-classification project that aims to classify a person's age, gender and race based on their photo using CNN and Tensorflow. Some difficulties were encountered when creating the final "Predict Model.py" to merge all three models together in the coding aspect. After injecting external images into the model, the final results looked more promising on age and gender - however, the model seems to predict race quite inaccurately - perhaps due to the photos being transformed into greyscale.
 
 
 # Files included:
