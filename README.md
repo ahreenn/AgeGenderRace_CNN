@@ -23,7 +23,7 @@ It contains 20,000 images of faces of all ethnicities, ages and genders.
 
 
 # Project steps:
-4. A separate CNN model for each variable (age, gender, race) into different .py files.
+4. A separate CNN model was made for each variable (age, gender, race) and saved into different .py files.
   Age was categorized into 1-2, 3-9, 10-20, 21-27, 38-45, 46-65, and 65+.
   Gender was categorized into male and female.
   Race was categorized into White, Black, Asian, Indian, and Others.
